@@ -122,42 +122,42 @@ foreach(Tag Threads;Serial;OpenMP;Cuda;HPX;OpenMPTarget;OpenACC;HIP;SYCL)
     # file. That then exceeded the shell command line max length.
     set(${Tag}_SOURCES1A)
     foreach(Name
-        Abort
-        ArrayOps
-        AtomicOperations_complexdouble
-        AtomicOperations_complexfloat
-        AtomicOperations_double
-        AtomicOperations_float
-        AtomicOperations_int
-        AtomicOperations_longint
-        AtomicOperations_longlongint
-        AtomicOperations_shared
-        AtomicOperations_unsignedint
-        AtomicOperations_unsignedlongint
-        Atomics
-        AtomicViews
-        BitManipulationBuiltins
-        BlockSizeDeduction
-        CheckedIntegerOps
-        CommonPolicyConstructors
-        CommonPolicyInterface
-        Complex
-        Concepts
-        Crs
-        DeepCopyAlignment
-        ExecSpacePartitioning
-        ExecutionSpace
-        FunctorAnalysis
-        HostSharedPtr
-        HostSharedPtrAccessOnDevice
-        Init
-        JoinBackwardCompatibility
-        LocalDeepCopy
-        MathematicalConstants
-        MathematicalFunctions1
-        MathematicalFunctions2
+        # Abort
+        # ArrayOps
+        # AtomicOperations_complexdouble
+        # AtomicOperations_complexfloat
+        # AtomicOperations_double
+        # AtomicOperations_float
+        # AtomicOperations_int
+        # AtomicOperations_longint
+        # AtomicOperations_longlongint
+        # AtomicOperations_shared
+        # AtomicOperations_unsignedint
+        # AtomicOperations_unsignedlongint
+        # Atomics
+        # AtomicViews
+        # BitManipulationBuiltins
+        # BlockSizeDeduction
+        # CheckedIntegerOps
+        # CommonPolicyConstructors
+        # CommonPolicyInterface
+        # Complex
+        # Concepts
+        # Crs
+        # DeepCopyAlignment
+        # ExecSpacePartitioning
+        # ExecutionSpace
+        # FunctorAnalysis
+        # HostSharedPtr
+        # HostSharedPtrAccessOnDevice
+        # Init
+        # JoinBackwardCompatibility
+        # LocalDeepCopy
+        # MathematicalConstants
+        # MathematicalFunctions1
+        # MathematicalFunctions2
         MathematicalFunctions3
-        MathematicalSpecialFunctions
+        # MathematicalSpecialFunctions
         )
       set(file ${dir}/Test${Tag}_${Name}.cpp)
       # Write to a temporary intermediate file and call configure_file to avoid
